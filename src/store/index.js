@@ -35,6 +35,9 @@ export default createStore({
     increaseRandomNumber(state, randomNumber) {
       state.counter += randomNumber
     },
+    resetCounter(state) {
+      state.counter = 0
+    },
     getUser(state, newuser) {
       state.firstName = newuser.results[0].name.first
       state.lastName = newuser.results[0].name.last
@@ -44,7 +47,8 @@ export default createStore({
       state.gender = newuser.results[0].gender
       state.picture = newuser.results[0].picture.large
       // console.log(newuser)
-    }
+    },
+
 
 
   },
