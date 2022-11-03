@@ -14,6 +14,9 @@
             <button @click="$store.dispatch('decreaseRandomNumber')">-Random</button>
             <button @click="$store.dispatch('increaseRandomNumber')">+Random</button>
         </div>
+    <div class="buttons">
+        <button @click="$store.commit('resetCounter')">Reset Number</button>
+    </div>
 </template>
 
 <script>
